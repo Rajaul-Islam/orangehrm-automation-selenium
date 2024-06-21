@@ -1,11 +1,13 @@
-import org.asynchttpclient.util.Assertions;
-import org.openqa.selenium.By;
-import org.openqa.selenium.devtools.v85.log.Log;
-import org.testng.Assert;
-import org.testng.SuiteRunner;
-import org.testng.annotations.Test;
+package testrunner;
 
-public class LoginTestRunner extends Setup{
+
+import config.Setup;
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import pages.LoginPage;
+
+public class LoginTestRunner extends Setup {
 
 @Test(priority = 1)
     public void loginWithWrongCreds(){
@@ -18,6 +20,7 @@ public class LoginTestRunner extends Setup{
     }
     @Test(priority = 2)
     public void doLogin(){
+
 
         LoginPage loginPage = new LoginPage(driver);
         loginPage.doLogin("admin","admin123");

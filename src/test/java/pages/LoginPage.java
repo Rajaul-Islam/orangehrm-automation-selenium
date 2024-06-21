@@ -1,3 +1,5 @@
+package pages;
+
 import net.bytebuddy.implementation.bytecode.ShiftRight;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

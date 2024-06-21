@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<suite name="Orange HRM report Generator">
+    <test name="Admin Login">
+        <classes>
+            <class name="testrunner.LoginTestRunner">
+
+            </class>
+        </classes>
+
+    </test>
+    <test name="Create User">
+        <classes>
+            <class name="testrunner.PmiTestRunner">
+
+            </class>
+        </classes>
+
+    </test>
+
+    <test name="New User Login">
+        <classes>
+            <class name="testrunner.UserTestRunner">
+
+            </class>
+        </classes>
+
+    </test>
+
+
+</suite>

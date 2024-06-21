@@ -29,7 +29,7 @@ public class Setup {
     @AfterTest
     public void  closeWindows()
     {
-//        driver.quit();
+        driver.quit();
     }
 
 }

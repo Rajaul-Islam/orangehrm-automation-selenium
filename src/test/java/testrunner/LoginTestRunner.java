@@ -17,7 +17,7 @@ import java.io.IOException;
 
 public class LoginTestRunner extends Setup {
 
-@Test(priority = 1)
+@Test(priority = 1, description = "admin cannot login with wrong cred")
     public void loginWithWrongCreds(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.doLogin("admin", "lkdfsljlkdfs");
@@ -26,7 +26,7 @@ public class LoginTestRunner extends Setup {
 
 
     }
-    @Test(priority = 2)
+    @Test(priority = 2, groups = "smoke", description = "admin can login wiht valid cred")
     public void doLogin() throws IOException, ParseException {
 
 
@@ -49,7 +49,7 @@ public class LoginTestRunner extends Setup {
        Boolean isExit=  driver.findElement(By.className("oxd-userdropdown-img")).isDisplayed();
        Assert.assertTrue(isExit);
     }
-@Test(priority = 3)
+@Test(priority = 3, description = "admin can log out ")
     public void doLogOut(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.doLogOut();

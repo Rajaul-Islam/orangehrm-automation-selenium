@@ -11,7 +11,7 @@ import java.time.Duration;
 public class Setup {
    public WebDriver driver;
 
-    @BeforeTest
+    @BeforeTest(groups = "smoke")
     public void setup() {
         System.setProperty("webdriver.chrome.driver", "D:\\salman sqa\\chromedriver-win64\\chromedriver.exe");
 
@@ -26,7 +26,7 @@ public class Setup {
         driver.get("https://opensource-demo.orangehrmlive.com/");
     }
 
-    @AfterTest
+    @AfterTest(groups = "smoke")
     public void  closeWindows()
     {
 //        driver.quit();

@@ -12,7 +12,7 @@ import pages.LoginPage;
 import java.io.IOException;
 
 public class UserTestRunner extends Setup {
-    @Test(priority = 1)
+    @Test(priority = 1, description = "employee can not login with wrong cred")
     public void loginWithWrongCreds() throws IOException, ParseException {
        JSONObject user =  Utils.readUser();
        String userName = (String) user.get("userName");

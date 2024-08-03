@@ -26,7 +26,7 @@ public class PmiTestRunner extends Setup {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.doLogin("admin", "admin123");
     }
-    @Test
+    @Test(description = "admin can create new employee account with valid cred")
     public void createUser() throws InterruptedException, IOException, ParseException {
         PIMPage pmipage = new PIMPage(driver);
 

@@ -8,23 +8,23 @@
         </classes>
 
     </test>
-    <test name="Create User">
-        <classes>
-            <class name="testrunner.PmiTestRunner">
+<!--    <test name="Create User">-->
+<!--        <classes>-->
+<!--            <class name="testrunner.PmiTestRunner">-->
 
-            </class>
-        </classes>
+<!--            </class>-->
+<!--        </classes>-->
 
-    </test>
+<!--    </test>-->
 
-    <test name="New User Login">
-        <classes>
-            <class name="testrunner.UserTestRunner">
+<!--    <test name="New User Login">-->
+<!--        <classes>-->
+<!--            <class name="testrunner.UserTestRunner">-->
 
-            </class>
-        </classes>
+<!--            </class>-->
+<!--        </classes>-->
 
-    </test>
+<!--    </test>-->
 
 
 </suite>

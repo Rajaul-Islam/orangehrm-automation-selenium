@@ -1,11 +1,19 @@
 package testrunner;
 
 
+import Utils.Utils;
 import config.Setup;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.LoginPage;
+
+import java.io.FileReader;
+import java.io.IOException;
 
 public class LoginTestRunner extends Setup {
 
@@ -19,11 +27,24 @@ public class LoginTestRunner extends Setup {
 
     }
     @Test(priority = 2)
-    public void doLogin(){
+    public void doLogin() throws IOException, ParseException {
 
 
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.doLogin("admin","admin123");
+//        loginPage.doLogin("admin","admin123");
+        String location  = "./src/test/resources/employes.json";
+        JSONParser parser = new JSONParser();
+        JSONArray employArray= (JSONArray) parser.parse(new FileReader(location));
+
+        JSONObject adminObj= (JSONObject) employArray.get(0);;
+
+        if(System.getProperty("userName")!=null&&System.getProperty("password")!=null){
+            loginPage.doLogin(System.getProperty("userName"), System.getProperty("password"));
+        }
+        else {
+            loginPage.doLogin(adminObj.get("userName").toString(), adminObj.get("password").toString());
+        }
+
         Assert.assertTrue(driver.getCurrentUrl().contains("dashboard"));
        Boolean isExit=  driver.findElement(By.className("oxd-userdropdown-img")).isDisplayed();
        Assert.assertTrue(isExit);

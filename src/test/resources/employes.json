@@ -1,1 +1,48 @@
-[{"firstName":"Theresia","lastName":"Boyle","password":"Ppassw@rd123","userName":"ira.padberg"},{"firstName":"Kathline","lastName":"Rempel","password":"Ppassw@rd123","userName":"corrie.welch"}]
+[
+  {
+    "userName": "admin",
+    "password": "admin123"
+  },
+  {
+    "firstName": "Theresia",
+    "lastName": "Boyle",
+    "password": "Ppassw@rd123",
+    "userName": "ira.padberg"
+  },
+  {
+    "firstName": "Kathline",
+    "lastName": "Rempel",
+    "password": "Ppassw@rd123",
+    "userName": "corrie.welch"
+  },
+  {
+    "firstName": "Denver",
+    "lastName": "Simonis",
+    "password": "Ppassw@rd123",
+    "userName": "gino.beatty"
+  },
+  {
+    "firstName": "Emery",
+    "lastName": "Wiegand",
+    "password": "Ppassw@rd123",
+    "userName": "olen.herzog"
+  },
+  {
+    "firstName": "Rosella",
+    "lastName": "Carter",
+    "password": "Ppassw@rd123",
+    "userName": "ta.mayert"
+  },
+  {
+    "firstName": "Chastity",
+    "lastName": "Hoppe",
+    "password": "Ppassw@rd123",
+    "userName": "jerrell.wisoky"
+  },
+  {
+    "firstName": "Trinidad",
+    "lastName": "Bartoletti",
+    "password": "Ppassw@rd123",
+    "userName": "rene.rogahn"
+  }
+]
